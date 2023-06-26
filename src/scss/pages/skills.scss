@@ -1,0 +1,32 @@
+.skills {
+	padding-top: 200px;
+	background-image: url("../images/line-about.svg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	&__items {
+		@include desktop {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	&__item {
+		width: 270px;
+	}
+	&__item + &__item {
+		margin-top: 20px;
+		@include desktop {
+			margin-top: 0;
+		}
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		margin-bottom: 5px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;
+	}
+}

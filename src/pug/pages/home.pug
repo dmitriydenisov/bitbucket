@@ -1,0 +1,39 @@
+section.home#home
+	.container
+		.resume 
+			+lazyPicture({
+			src: `${baseDir}images/photo.jpg`,
+			alt: 'фото',
+			}).resume__picture
+			.resume__description
+				.resume__item
+					h1.resume__title 
+						|Денисов Дмитрий Андреевич
+						br
+						|Middle frontend-developer
+					p.resume__text
+						|Как разработчик, я высоко ценю способность воплотить видение дизайнера в жизнь, что считаю очень полезным для бизнеса. Я получаю огромное удовлетворение, наблюдая за работой от идеи до дизайна, особенно когда она появляется в руках пользователя. Я считаю, что ориентированные на пользователя решения являются наиболее ценными цифровыми ресурсами будущего.
+				.resume__item
+					ul.contacts
+						li.contacts__item 
+							a(href="#").contacts__link dmitriyd2009@yandex.ru
+						li.contacts__item 
+							a(href="#").contacts__link +7 (927) 134-52-84
+						li.contacts__item г. Саратов
+						li.contacts__item 
+							.contacts__social
+								a(href="#").contacts__link
+									+svg('fb')
+								a(href="#").contacts__link
+									+svg('vk')
+								a(href="#").contacts__link
+									+svg('tg')
+	.modal-resume
+		.modal-resume__content
+			.resume__item 
+				h2.resume__title
+				.resume__text
+			+lazyPicture({
+			src: `${baseDir}images/cond.png`,
+			alt: 'image',
+			}).modal__image

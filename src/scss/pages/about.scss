@@ -1,0 +1,153 @@
+.heading {
+	font-weight: $font-weight;
+	font-size: vw(20);
+	line-height: vw(24);
+	margin-bottom: 30px;
+	@include devices {
+		font-size: vmin(24);
+		line-height: wmin(29);
+	}
+}
+.about {
+	&__card {
+		@include desktop {
+			width: 560px;
+		}
+	}
+	&__card + &__card {
+		margin-top: 60px;
+	}
+
+	&__img--design {
+		width: 62px;
+		height: 42px;
+	}
+
+	&__items {
+		@include desktop {
+			display: flex;
+		}
+	}
+	&__date {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: #828282;
+	}
+	&__post {
+		position: relative;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		display: inline-block;
+
+		&:after {
+			content: "";
+			position: absolute;
+			height: 17px;
+			background-repeat: no-repeat;
+			right: 0px;
+		}
+		&--freelance {
+			padding-right: 45px;
+
+			&:after {
+				width: 35px;
+				background-image: url("../images/freelance.png");
+			}
+		}
+		&--digital {
+			padding-right: 45px;
+
+			&:after {
+				width: 26px;
+				background-image: url("../images/digital.png");
+			}
+		}
+		&--seo {
+			padding-right: 45px;
+
+			&:after {
+				width: 26px;
+				background-image: url("../images/seo.png");
+			}
+		}
+		&--content {
+			padding-right: 45px;
+
+			&:after {
+				width: 17px;
+				background-image: url("../images/content.png");
+			}
+		}
+		&--support {
+			padding-right: 45px;
+
+			&:after {
+				width: 17px;
+				background-image: url("../images/support.png");
+			}
+		}
+	}
+	&__location {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		padding: 10px 0;
+		display: flex;
+		align-items: center;
+		span {
+			font-weight: 700;
+		}
+	}
+	&__logo {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		margin-right: 10px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+	}
+	&__link {
+		font-size: 14px;
+		line-height: 17px;
+
+		color: #2f80ed;
+		display: block;
+		text-decoration: underline;
+	}
+}
+.education {
+	.about {
+		&__cards {
+			display: grid;
+			grid-template-columns: auto auto;
+			@include desktop {
+				display: block;
+			}
+		}
+		&__card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 30px;
+			@include desktop {
+				width: 190px;
+			}
+		}
+		&__card + &__card {
+			margin-top: 30px;
+		}
+		&__post {
+			text-align: center;
+		}
+		&__location {
+			text-align: center;
+		}
+	}
+}
