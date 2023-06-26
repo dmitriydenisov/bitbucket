@@ -1,2 +1,16 @@
 // stylelint-disable no-empty-source
 // @include font-face("../fonts/FontName/FontName", "FontName", 400, normal);
+@font-face {
+	font-family: "SF Pro Display";
+	src: url("../fonts/SFPro/SFProDisplay-Regular.woff2") format(woff2)
+		url("../fonts/SFPro/SFProDisplay-Regular.woff") format(woff);
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "SF Pro Display";
+	src: url("../fonts/SFPro/SFProDisplay-Bold.woff2") format(woff2)
+		url("../fonts/SFPro/SFProDisplay-Bold.woff") format(woff);
+	font-weight: 700;
+	font-style: normal;
+}

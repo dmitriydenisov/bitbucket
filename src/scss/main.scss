@@ -10,10 +10,8 @@
 @import "helpers";
 
 @import "components/header";
-@import "components/footer";
 @import "components/preloader";
-
-@import "pages/home";
-@import "pages/about";
-@import "pages/skills";
-@import "pages/footer";
+@import "components/home";
+@import "components/about";
+@import "components/skills";
+@import "components/footer";
